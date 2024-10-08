@@ -1,0 +1,13 @@
+
+- keys * ： 查看当前库所有的key
+- exits key 判断某个key是否存在
+- type key 查看你的key类型
+- del key 删除指定的key数据
+- unlink key 非阻塞删除，仅仅将keys从keyspace元数据中删除，真正的删除
+- ttl key 查看还有多少秒过期
+- expire key 秒钟 为key设置过期时间
+- move key [数据库数字] 把key移动到相应的数据库 
+- select [数据库数字] 切换数据库
+- dbsize 查看当前数据库key的数量
+- flushdb 清空数据库
+- flushall 清空所有数据库

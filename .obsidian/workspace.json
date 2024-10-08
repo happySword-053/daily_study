@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "ae6ff641fb2637f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "924a3151c975eb88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "266849dc38518a8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git/工作区域和工作状态.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f2f26eed112598e",
+    "type": "split",
+    "children": [
+      {
+        "id": "74a0d1ed4daa25f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fba03fe1aefe7c8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6ed7ca71b5793f62",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fe61066a25a29f0b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "d824df9f18c000c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "961ea35d04064f73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99d1397d78489377",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "git/工作区域和工作状态.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a6e7c9d6403f0ba0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "git/工作区域和工作状态.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c60ce5a7871c3184",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "98274d97797c40a2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "git/工作区域和工作状态.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "266849dc38518a8d",
+  "lastOpenFiles": [
+    "git/新建仓库.md",
+    "git/添加和提交文件.md",
+    "git/工作区域和工作状态.md",
+    "redis/持久化.md",
+    "Pasted image 20241008165751.png",
+    "cmake/aux_source_directory命令.md",
+    "c++/静态库与动态库.md",
+    "cmake/include_directories指令和target_include_directories指令.md",
+    "cmake/包含头文件.md",
+    "cmake/set指令.md",
+    "git/git diff.md",
+    "git/git reset回退版本.md",
+    "Pasted image 20241006094610.png",
+    "Pasted image 20241006094503.png",
+    "Pasted image 20241005204007.png",
+    "Pasted image 20241005203621.png",
+    "ric/9-29.md",
+    "git",
+    "Pasted image 20241005162823.png",
+    "Pasted image 20241005151633.png",
+    "Pasted image 20241005151005.png",
+    "Pasted image 20241005144725.png",
+    "redis/bitfield大类.md",
+    "redis/stream大类.md",
+    "start end count.md",
+    "Pasted image 20241004165807.png",
+    "linux/查找指令.md",
+    "linux/压缩文件指令.md",
+    "linux/at定时任务.md",
+    "linux/crond任务调度.md",
+    "linux/history.md",
+    "linux/ln指令.md",
+    "rocketMQ/概述.md",
+    "rocketMQ",
+    "redis/GEO大类.md",
+    "redis/HyperLogLog.md",
+    "redis/bitmap大类.md",
+    "ric",
+    "网络",
+    "c++/运算",
+    "c++/面向对象",
+    "c++/string类常用",
+    "c++",
+    "redis",
+    "设计模式"
+  ]
+}
