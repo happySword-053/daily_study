@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/工作区域和工作状态.md",
+                "file": "dorker/docker概述.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/工作区域和工作状态.md",
+                "file": "dorker/docker概述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/工作区域和工作状态.md",
+                "file": "dorker/docker概述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/工作区域和工作状态.md"
+                "file": "dorker/docker概述.md"
               }
             }
           }
@@ -148,9 +148,17 @@
   },
   "active": "266849dc38518a8d",
   "lastOpenFiles": [
+    "c++/数据类型/union类.md",
+    "dorker/docker概述.md",
+    "dorker",
+    "网络/边沿触发与水平触发.md",
+    "c++/数据类型",
+    "网络/reactor.md",
+    "cmake/add_execute命令.md",
+    "cmake/常见语法罗列.md",
+    "git/工作区域和工作状态.md",
     "git/新建仓库.md",
     "git/添加和提交文件.md",
-    "git/工作区域和工作状态.md",
     "redis/持久化.md",
     "Pasted image 20241008165751.png",
     "cmake/aux_source_directory命令.md",
@@ -179,19 +187,12 @@
     "linux/at定时任务.md",
     "linux/crond任务调度.md",
     "linux/history.md",
-    "linux/ln指令.md",
-    "rocketMQ/概述.md",
     "rocketMQ",
-    "redis/GEO大类.md",
-    "redis/HyperLogLog.md",
-    "redis/bitmap大类.md",
     "ric",
     "网络",
     "c++/运算",
     "c++/面向对象",
-    "c++/string类常用",
-    "c++",
-    "redis",
-    "设计模式"
+    "c++/数据类型/string类常用",
+    "c++"
   ]
 }
