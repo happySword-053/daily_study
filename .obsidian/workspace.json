@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "设计模式/设计模式关系.md",
+                "file": "c++/可变参数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "设计模式关系"
+              "title": "可变参数"
+            }
+          },
+          {
+            "id": "d78c2f2030138a15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mysql/存储过程与函数.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "存储过程与函数"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 297.5
   },
   "right": {
     "id": "d824df9f18c000c7",
@@ -162,53 +177,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "44ced76f049ee273",
+  "active": "d78c2f2030138a15",
   "lastOpenFiles": [
-    "Pasted image 20241110171239.png",
-    "Pasted image 20241110165913.png",
-    "Pasted image 20241110161510.png",
-    "Pasted image 20241110161357.png",
-    "Pasted image 20241110151741.png",
-    "Pasted image 20241110151739.png",
-    "设计模式/设计模式的原则.md",
+    "mysql/mysql引擎.md",
+    "mysql/存储过程与函数.md",
+    "mysql/第15章_存储过程与函数.md",
+    "mysql/事务/事务的基本要素.md",
+    "mysql/未命名",
+    "mysql/事务/幻读.md",
+    "mysql/mvcc.md",
+    "mysql/函数/字符串函数.md",
+    "mysql/函数/信息函数.md",
+    "mysql/函数/数字截断函数.md",
+    "mysql/函数/日期和时间类型函数.md",
+    "mysql/函数/其他函数.md",
+    "mysql/函数/加密函数.md",
+    "mysql/函数/存储函数.md",
+    "mysql/函数/常用数学函数.md",
+    "mysql/约束.md",
+    "mysql/c++数据库连接池.md",
+    "mysql/去重关键字distinct.md",
+    "mysql/显示表结构.md",
+    "mysql/视图.md",
+    "mysql/事务/丢失更新.md",
+    "mysql/事务/不可重复读.md",
+    "Pasted image 20240728135806.png",
+    "Pasted image 20240728131357.png",
+    "图片/Pasted image 20240731180329.png",
+    "图片/Pasted image 20240731180255.png",
+    "图片/Pasted image 20240731171331.png",
+    "图片/Pasted image 20240728135806.png",
+    "图片/Pasted image 20240728131416.png",
+    "图片/Pasted image 20240728131357.png",
+    "图片/Pasted image 20241205155426.png",
+    "图片/Pasted image 20241205152818.png",
+    "图片",
+    "mysql/undolog.md",
+    "mysql/事务/幻读和不可重复读的区别.md",
+    "mysql/事务/脏读.md",
+    "mysql/当前读和快照读.md",
+    "mysql/事务",
     "设计模式/设计模式关系.md",
-    "Pasted image 20241109184610.png",
-    "Pasted image 20241109164031.png",
-    "c++/面向对象/多态相关疑问.md",
-    "c++/面向对象/虚析构函数.md",
-    "c++/面向对象/虚函数.md",
-    "c++/面向对象/友元函数.md",
-    "八股/const跟constexpr的区别.md",
-    "c++/模板类/为什么const T&可以绑定到右值？.md",
-    "未命名",
+    "c++/多线程",
+    "设计模式/创建型设计模式",
+    "linux/网络状态",
+    "linux/进程管理",
     "八股",
-    "设计模式/奇异递归模板类型.md",
     "c++/模板类",
-    "c++/未命名.md",
-    "linux/查找指令.md",
-    "redis/持久化.md",
-    "redis/bitmap大类.md",
-    "redis/bitfield大类.md",
-    "redis/stream大类.md",
-    "redis/string大类.md",
-    "redis/zset大类.md",
-    "linux/简单命令如开关机，调时间.md",
-    "dorker/docker的安装部署.md",
-    "Pasted image 20241011194731.png",
-    "Pasted image 20241011192941.png",
-    "dorker/容器与虚拟机的差异.md",
-    "dorker/docker概述.md",
-    "c++/数据类型/union类.md",
-    "dorker",
-    "网络/边沿触发与水平触发.md",
-    "c++/数据类型",
-    "网络/reactor.md",
-    "c++/cmake/add_execute命令.md",
-    "Pasted image 20241008165751.png",
-    "git",
-    "rocketMQ",
-    "ric",
-    "网络",
-    "c++/运算"
+    "dorker"
   ]
 }
