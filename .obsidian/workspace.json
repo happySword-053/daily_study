@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "924a3151c975eb88",
+        "id": "b7c9f22160b95722",
         "type": "tabs",
         "children": [
           {
-            "id": "44ced76f049ee273",
+            "id": "03c44bc26debedb8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "c++/可变参数.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "可变参数"
-            }
-          },
-          {
-            "id": "d78c2f2030138a15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "redis/string大类.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "string大类"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -67,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#include",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -177,53 +158,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d78c2f2030138a15",
+  "active": "03c44bc26debedb8",
   "lastOpenFiles": [
-    "redis/zset大类.md",
-    "golang/切片.md",
-    "golang/可变参数类型.md",
-    "c++/NULL和nullptr的区别.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第19章 数据库备份与恢复.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第18章 主从复制.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第17章 其它数据库日志.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第16章 多版本并发控制.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第15章 锁.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第14章 MySQL事务日志.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第13章 事务基础知识.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第12章 数据库其它调优策略.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第11章 数据库的设计规范.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第10章 索引优化与查询优化.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第05章 存储引擎.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第09章 性能分析工具的使用.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第08章 索引的创建与设计原则.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第07章 InnoDB数据存储结构.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第06章 索引的数据结构.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第04章 逻辑架构.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第02章 MySQL的数据目录.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第03章 用户与权限管理.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记/第01章 Linux下MySQL的安装与使用.md",
+    "983141313019944MySQLmd笔记/mysql高级篇笔记",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/自律ing.jpg",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/SQLisputonghua.jpg",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/MySQL编码2.jpg",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/MySQL编码1.jpg",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/image_20211020132711.jpg",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/image-20211111182656990.png",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/image-20211108114846634.png",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/image-20211104193330204.png",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/image-20211104192912988.png",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images/image-20211104192516324.png",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/images",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第18章_MySQL8其它新特性.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第17章_触发器.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第16章_变量、流程控制与游标.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第15章_存储过程与函数.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第14章_视图.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第13章_约束.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记/第12章_MySQL数据类型精讲.md",
+    "983141313019944MySQLmd笔记/mysql基础篇笔记",
+    "983141313019944MySQLmd笔记",
+    "c++/进程",
+    "八股/c++/编译与内存相关",
+    "八股/c++",
+    "八股/mysql",
     "golang",
-    "图片/Pasted image 20250127104554.png",
-    "redis/string大类.md",
-    "redis/set大类.md",
-    "c++/模板类/可变参数模板.md",
-    "c++/面向对象/虚函数.md",
-    "gdb/gdb常用命令.md",
-    "mysql/mvcc.md",
-    "gdb",
-    "c++/chrono.md",
-    "c++/c++20ranges常用.md",
-    "网络/epoll常见的事件.md",
-    "网络/reactor.md",
-    "网络/边沿触发与水平触发.md",
-    "mysql/函数/加密函数.md",
-    "mysql/函数/存储函数.md",
-    "mysql/函数/其他函数.md",
-    "linux/查找指令.md",
-    "c++/cmake/include_directories指令和target_include_directories指令.md",
-    "c++/cmake/set指令.md",
-    "c++/cmake/包含头文件.md",
-    "c++/cmake/常见语法罗列.md",
-    "c++/cmake/搜索文件指令.md",
-    "c++/cmake/add_execute命令.md",
-    "c++/cmake/aux_source_directory命令.md",
-    "c++/智能指针",
-    "图片/Pasted image 20241213173144.png",
-    "图片/Pasted image 20241210090639.png",
-    "图片/【粉红色的头发】2024-07-19 20_48_00.png",
-    "mysql/未命名",
-    "Pasted image 20240728135806.png",
-    "Pasted image 20240728131357.png",
-    "图片/Pasted image 20240731180329.png",
-    "图片/Pasted image 20240731180255.png",
-    "图片/Pasted image 20240731171331.png",
-    "图片/Pasted image 20240728135806.png",
-    "图片",
-    "mysql/事务",
-    "c++/多线程",
-    "设计模式/创建型设计模式",
-    "linux/网络状态",
-    "linux/进程管理"
+    "gdb"
   ]
 }
