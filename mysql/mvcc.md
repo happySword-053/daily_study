@@ -45,13 +45,27 @@ DB_ROW_ID – 单调递增的行 ID，他就是 AUTO_INCREMENT 的主键 ID
 
 ### 什么是readview呢？
 
-当我们用select读取数据时，这一时刻的数据会有很多个版本（例如上图有四个版本），但我们并不知道读取哪个版本，这时就靠readview来对我们进行读取版本的限制，通过readview我们才知道自己能够读取哪个版本。列表即在当前事务创建时仍在运行的事务。
-
-在一个readview快照中主要包括以下这些字段：
+- **记录事务状态**：ReadView在事务首次执行SELECT时生成，记录以下关键信息：
+    
+    - `m_ids`：当前活跃（未提交）事务的ID列表。
+        
+    - `min_trx_id`：活跃事务中的最小ID（低水位线）。
+        
+    - `max_trx_id`：下一个即将分配的事务ID（高水位线）。
+        
+    - `creator_trx_id`：创建该ReadView的事务自身ID（仅当该事务有写操作时存在）。
+        
+- **可见性判断**：通过对比数据行的`DB_TRX_ID`（最后修改该行的事务ID）与ReadView的信息，决定当前事务能否看到该版本的数据：
+    
+    - 如果`DB_TRX_ID < min_trx_id`：该版本已提交，可见。
+        
+    - 如果`DB_TRX_ID >= max_trx_id`：该版本由未来事务修改，不可见。
+        
+    - 如果`min_trx_id <= DB_TRX_ID < max_trx_id`：需检查是否在`m_ids`中，若不在则可见。
 
 ![[Pasted image 20241205152724.png]]
 
-对readview中的参数做一些解释
+## 对readview中的参数做一些解释
 
 m_ids：活跃的事务就是指还没有commit的事务。
 
