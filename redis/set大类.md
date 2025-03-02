@@ -1,23 +1,75 @@
 和list很详细，但是无重复
 
-- sadd key member 向key中添加元素
-- smembers key 遍历所有元素
-- sismember key member
-- srem key member 从key中删除member
-- scard key 获取集合中元素的个数
-- srandmember key [数字] 从集合中随机展现n个元素
-- spop key [数字] 从集合中随机弹出n个袁术
-- smove key1 key2 [key1中存在的某个值] 将key1里已经存在的某个值赋给key2
+Redis 的 Set 是无序且唯一的字符串集合，以下为你详细介绍 Set 类型的常见操作：
 
+### 集合元素操作
 
+#### 添加元素
 
+  
 
-# 集合运算
-- 集合差集运算A-B    **sdiff key1 key2**     查看属于key1但不属于key2 的元素
-- A^B集合并集运算 sunion key1 key2
-- A&B集合交集运算 sinter key1 key2
-- sintercard member_key key1 key2.... 返回所有集合交集的集合中元素的个数
+- **`SADD key member [member ...]`**：将一个或多个成员添加到指定集合中。若成员已存在于集合中则忽略，若集合不存在则先创建集合再添加成员。例如 `SADD myset "apple" "banana"`，会将 `"apple"` 和 `"banana"` 添加到 `myset` 集合中。
 
+#### 删除元素
+
+  
+
+- **`SREM key member [member ...]`**：从指定集合中移除一个或多个成员。若成员不存在则忽略。如 `SREM myset "apple"`，会从 `myset` 集合中移除 `"apple"`。
+
+#### 检查元素是否存在
+
+  
+
+- **`SISMEMBER key member`**：检查指定成员是否存在于集合中。若存在返回 1，不存在返回 0。例如 `SISMEMBER myset "banana"`，可判断 `"banana"` 是否在 `myset` 集合里。
+
+#### 获取集合所有元素
+
+  
+
+- **`SMEMBERS key`**：返回集合中的所有成员。如 `SMEMBERS myset`，会列出 `myset` 集合的所有元素。
+
+#### 获取集合元素数量
+
+  
+
+- **`SCARD key`**：返回集合中元素的数量。例如 `SCARD myset`，可得到 `myset` 集合的元素个数。
+
+### 集合间操作
+
+#### 交集操作
+
+  
+
+- **`SINTER key [key ...]`**：返回给定多个集合的交集元素。例如有集合 `set1` 包含 `{"apple", "banana", "cherry"}`，集合 `set2` 包含 `{"banana", "date"}`，执行 `SINTER set1 set2` 会返回 `{"banana"}`。
+- **`SINTERSTORE destination key [key ...]`**：将给定多个集合的交集元素存储到 `destination` 集合中，同时返回交集元素的数量。如 `SINTERSTORE result set1 set2`，会把 `set1` 和 `set2` 的交集元素存储到 `result` 集合中。
+
+#### 并集操作
+
+  
+
+- **`SUNION key [key ...]`**：返回给定多个集合的并集元素。例如对于上述的 `set1` 和 `set2`，执行 `SUNION set1 set2` 会返回 `{"apple", "banana", "cherry", "date"}`。
+- **`SUNIONSTORE destination key [key ...]`**：将给定多个集合的并集元素存储到 `destination` 集合中，同时返回并集元素的数量。如 `SUNIONSTORE result set1 set2`，会把 `set1` 和 `set2` 的并集元素存储到 `result` 集合中。
+
+#### 差集操作
+
+  
+
+- **`SDIFF key [key ...]`**：返回第一个集合与其他集合的差集元素。以 `set1` 和 `set2` 为例，执行 `SDIFF set1 set2` 会返回 `{"apple", "cherry"}`。
+- **`SDIFFSTORE destination key [key ...]`**：将第一个集合与其他集合的差集元素存储到 `destination` 集合中，同时返回差集元素的数量。如 `SDIFFSTORE result set1 set2`，会把 `set1` 和 `set2` 的差集元素存储到 `result` 集合中。
+
+### 随机操作
+
+#### 随机获取元素
+
+  
+
+- **`SRANDMEMBER key [count]`**：从集合中随机返回一个或多个成员。当 `count` 为正数时，返回不重复的成员；当 `count` 为负数时，返回可能重复的成员。例如 `SRANDMEMBER myset 2`，会从 `myset` 集合中随机返回 2 个不重复的元素。
+
+#### 随机移除元素
+
+  
+
+- **`SPOP key [count]`**：从集合中随机移除并返回一个或多个成员。例如 `SPOP myset 1`，会从 `myset` 集合中随机移除并返回 1 个元素。
 
 # 案例
 ####                  QQ你可能认识的人
