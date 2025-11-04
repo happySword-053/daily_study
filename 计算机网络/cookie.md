@@ -1,4 +1,4 @@
-### 1. **Name 和 Value**
+ ### 1. **Name 和 Value**
 
 - **描述** : `Cookie` 的核心部分，由键值对组成。
 - **格式** : `Name=Value`
@@ -107,4 +107,70 @@
     
     - 未过期的 Cookie 才会被发送。
 
-也就是说，只要浏览器对应的cookie满足域名匹配，路径匹配，安全属性，有效期就可以发送cookie对吗？
+
+
+**Cookie 生命周期示例 (伪代码/HTTP 交互)：**
+
+**场景：** 用户首次访问 `https://www.example.com/login` 并成功登录。
+
+1. **服务器设置 Cookie (响应):**
+    
+    http
+    
+    复制
+    
+    下载
+    
+    HTTP/1.1 200 OK
+    Content-Type: text/html
+    Set-Cookie: sessionId=abc123xyz; Expires=Wed, 21 Oct 2025 07:28:00 GMT; Domain=.example.com; Path=/; Secure; HttpOnly; SameSite=Lax
+    Set-Cookie: theme=dark; Max-Age=2592000; Path=/; Secure; HttpOnly // 主题偏好，保存30天
+    <!DOCTYPE html>
+    <html>...登录成功页面...</html>
+    
+    - **`sessionId=abc123xyz`**: 核心会话标识。
+        
+    - **`Expires` / `Max-Age`**: 控制有效期（`sessionId` 持久化，`theme` 30天后过期）。
+        
+    - **`Domain=.example.com`**: 浏览器会将此Cookie发送给`www.example.com`, `api.example.com`, `blog.example.com`等所有子域（注意开头的点`.`表示包含子域）。
+        
+    - **`Path=/`**: 发送给`example.com`域下_任何路径_的请求。
+        
+    - **`Secure`**: 仅通过HTTPS传输。
+        
+    - **`HttpOnly`**: JavaScript无法读取，防止XSS窃取会话ID。
+        
+    - **`SameSite=Lax`**: 允许在顶级导航（如链接点击）和同站GET请求中发送Cookie，阻止跨站POST提交等CSRF常用手段。
+        
+2. **浏览器存储 Cookie:**
+    
+    - 浏览器接收到响应头中的`Set-Cookie`指令。
+        
+    - 根据属性(`Domain`, `Path`, `Secure`, `HttpOnly`, `SameSite`, `Expires/Max-Age`)将键值对(`sessionId=abc123xyz`, `theme=dark`)安全地存储在其Cookie仓库中。
+        
+3. **浏览器发送 Cookie (后续请求):**  
+    当用户访问 `https://www.example.com/dashboard` 或 `https://api.example.com/user/profile` (同域或子域) 时：
+    
+    http
+    
+    复制
+    
+    下载
+    
+    GET /dashboard HTTP/1.1
+    Host: www.example.com
+    Cookie: sessionId=abc123xyz; theme=dark // 浏览器自动添加存储的、符合作用域和安全要求的Cookie
+    
+    - 浏览器检查请求的URL(`https://www.example.com/dashboard`)。
+        
+    - 匹配`Domain`(`.example.com`), `Path`(`/`), `Secure`(是HTTPS), `SameSite`(符合Lax策略)。
+        
+    - 将匹配的Cookie(`sessionId`, `theme`)自动放入`Cookie`请求头发送给服务器。
+        
+4. **服务器读取 Cookie:**
+    
+    - 后端应用（C++服务）从HTTP请求的`Cookie`头中解析出键值对。
+        
+    - 使用`sessionId=abc123xyz`查找服务器端存储的会话数据（通常在Redis或内存缓存中），识别用户身份和状态。
+        
+    - 使用`theme=dark`为用户加载深色主题界面。

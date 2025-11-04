@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "8b09eb13f384ee9d",
+        "id": "c9efe593d3932142",
         "type": "tabs",
         "children": [
           {
-            "id": "e0a693fe3df6fd5b",
+            "id": "8669f0bfa3f584d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mysql/983141313019944MySQLmd笔记/mysql基础篇笔记/第15章_存储过程与函数.md",
+                "file": "mysql/函数/其他函数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第15章_存储过程与函数"
+              "title": "其他函数"
+            }
+          },
+          {
+            "id": "22a082b2eba92f35",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.12"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,6 +168,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -163,53 +177,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e0a693fe3df6fd5b",
+  "active": "22a082b2eba92f35",
   "lastOpenFiles": [
-    "设计模式/创建型设计模式/原型模式.md",
-    "设计模式/观察者模式.md",
-    "c++/static_cast.md",
-    "操作系统/虚拟内存.md",
-    "计算机网络/SSL TLS.md",
+    "mysql/函数/加密函数.md",
+    "mysql/函数/存储函数.md",
+    "mysql/函数/常用数学函数.md",
+    "java/类/抽象类与非抽象类的区别.md",
+    "大数据/屏幕截图 2025-08-16 231322.png",
+    "大数据",
+    "java/多线程",
+    "mysql/MVCC.md",
+    "java/类",
+    "java",
+    "mysql/mysql锁.md",
+    "mysql/ACID依赖日志保证.md",
+    "mysql/索引/索引.md",
+    "mysql/事务/事务的基本要素.md",
+    "mysql/事务/脏读.md",
+    "mysql/事务/不可重复读.md",
+    "mysql/约束.md",
+    "mysql/主从架构.md",
+    "mysql/MySQL日志系统.md",
+    "mysql/三大范式.md",
+    "redis/string大类.md",
+    "redis/stream大类.md",
+    "redis/list大类.md",
+    "redis/hash大类.md",
+    "redis/GEO大类.md",
+    "redis/bitmap大类.md",
+    "redis/bitfield大类.md",
+    "mysql/视图.md",
+    "c++/extern.md",
+    "c++/智能指针/weak_ptr.md",
+    "c++/智能指针/make_shared和make_unique.md",
+    "c++/stl容器",
+    "人工智能",
+    "图片/Pasted image 20250620174925.png",
+    "nginx",
+    "boost/asio网络库",
+    "boost",
+    "图片/Pasted image 20250426140912.png",
+    "FeiQ",
+    "图片/Pasted image 20250306131012.png",
     "图片/Pasted image 20250227212539.png",
     "图片/Pasted image 20250227212522.png",
     "图片/Pasted image 20250227212507.png",
-    "c++/编译与内存相关/内存管理.md",
-    "八股/c++/编译与内存相关/内存管理.md",
-    "c++/编译与内存相关/ELF文件.md",
-    "计算机网络/cookie.md",
-    "计算机网络/udp协议.md",
-    "计算机网络/tcp的传送与应答.md",
-    "c++/头文件问题.md",
-    "c++/多线程/packaged_task.md",
-    "c++/多线程/future.md",
-    "c++/多线程/atomic原子操作.md",
-    "计算机网络/TCP的粘包、拆包.md",
-    "c++/进程/消息队列.md",
-    "linux/查找指令.md",
-    "计算机网络/OSI.md",
     "图片/Pasted image 20250225145707.png",
-    "计算机网络",
-    "c++/模板类/为什么const T&可以绑定到右值？.md",
-    "八股/为什么构造函数要声明为引用.md",
-    "八股/静态绑定和动态绑定.md",
-    "c++/move函数原理.md",
-    "c++/多态.md",
-    "c++/oop.md",
-    "redis/事务.md",
     "图片/Pasted image 20250222183742.png",
-    "图片/Pasted image 20250221162238.png",
-    "图片/Pasted image 20250221162227.png",
-    "网络/http/请求头字段",
-    "图片/Pasted image 20250220143024.png",
-    "图片/Pasted image 20250220143014.png",
-    "图片/Pasted image 20250220143001.png",
-    "网络/http/与http协作的web服务器",
-    "网络/http",
-    "分布式",
-    "c++/编译与内存相关",
-    "操作系统",
-    "mysql/锁",
-    "mysql/索引",
-    "mysql/983141313019944MySQLmd笔记/mysql高级篇笔记"
+    "图片/Pasted image 20250221162238.png"
   ]
 }
